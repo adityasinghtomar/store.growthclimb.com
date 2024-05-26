@@ -1,0 +1,391 @@
+.wpfnl-license-page {
+  background: transparent;
+}
+
+.wpfnl-license-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 24px;
+  padding-right: 24px;
+  gap: 30px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(190, 190, 215, 0.2);
+  border-radius: 10px;
+  width: calc(100% - 390px);
+  padding: 15px 20px 20px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .field-header .product-title,
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .product-title {
+  width: 390px;
+  position: relative;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .field-header .input-field,
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .input-field {
+  width: calc(100% - 460px);
+  max-width: 420px;
+  padding: 0 40px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .field-header .btn-area,
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .btn-area {
+  width: 170px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .field-header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .field-header:before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  width: calc(100% + 40px);
+  height: 1px;
+  background: #E5E8F3;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .field-header .single-field {
+  text-transform: uppercase;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .product-title {
+  display: flex;
+  align-items: center;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .product-title .icon-info {
+  width: calc(100% - 50px);
+  padding-left: 15px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .product-title h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #363B4E;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .license-status {
+  font-size: 14px;
+  line-height: 16px;
+  color: #7A8B9A;
+  margin-top: 5px;
+  display: block;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .addon-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .input-field input {
+  height: 46px;
+  padding: 6px 15px 5px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .btn-area {
+  position: relative;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .btn-area .btn-default {
+  padding: 0 22px;
+  height: 46px;
+  min-width: 162px;
+  border-radius: 10px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .btn-area .lnc-notice {
+  color: green;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-left: 8px;
+  position: absolute;
+  bottom: -24px;
+  left: -4px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license {
+  padding: 15px;
+  background: #F7F7FA;
+  margin-top: 30px;
+  border-radius: 0 8px 8px 0;
+  border-left: 2px solid #6E42D3;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .single-addons {
+  margin-bottom: 15px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .single-addons:last-child {
+  margin-bottom: 0;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area {
+  padding: 12px 15px;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgba(190, 190, 215, 0.2);
+  border-radius: 6px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .product-title {
+  width: 362px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .addon-icon {
+  background: #F7F7FA;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area h3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #363B4E;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .input-field input {
+  height: 38px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .btn-area {
+  width: 145px;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .btn-area .btn-default {
+  padding: 0 18px;
+  font-size: 13px;
+  height: 38px;
+  min-width: auto;
+  margin-left: auto;
+  display: block;
+  border-radius: 6px;
+  width: 100%;
+}
+.wpfnl-license-wrapper .wpfnl-license-filed .addons-license .not-get-addons .input-field-area .product-title {
+  width: calc(100% - 200px);
+}
+.wpfnl-license-wrapper .promo-text-area {
+  width: 360px;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px rgba(190, 190, 215, 0.2);
+}
+.wpfnl-license-wrapper .promo-text-area .single-area {
+  position: relative;
+  padding: 25px 25px 25px 90px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(190, 190, 215, 0.2);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.wpfnl-license-wrapper .promo-text-area .single-area:last-child {
+  margin-bottom: 0;
+}
+.wpfnl-license-wrapper .promo-text-area .single-area .icon {
+  background-color: #F7F7FA;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 30px;
+  left: 26px;
+}
+.wpfnl-license-wrapper .promo-text-area .single-area h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #363B4E;
+  font-weight: 500;
+}
+.wpfnl-license-wrapper .promo-text-area .single-area P {
+  font-size: 14px;
+}
+.wpfnl-license-wrapper .promo-text-area .manage-license-area {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+}
+.wpfnl-license-wrapper .promo-text-area .manage-license-area .logo {
+  margin-bottom: 12px;
+}
+.wpfnl-license-wrapper .promo-text-area .manage-license-area p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wpfnl-license-wrapper .promo-text-area .manage-license-area .btn-default {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.cl-doc-row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  padding-right: 24px;
+  gap: 30px;
+}
+.cl-doc-row .single-col {
+  background: #fff;
+  padding: 30px;
+  width: calc(25% - 23px);
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  position: relative;
+}
+.cl-doc-row .single-col:last-child {
+  margin-right: 0;
+}
+.cl-doc-row .single-col .icon {
+  background-color: #f0f1f3;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 24px;
+  left: 30px;
+}
+.cl-doc-row .single-col h4 {
+  font-size: 20px;
+  margin-bottom: 22px;
+  font-weight: 500;
+  padding-left: 53px;
+  color: #3c434a;
+}
+.cl-doc-row .single-col p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.cl-doc-row .single-col .btn-default {
+  margin-top: auto;
+}
+.cl-doc-row .single-col.manage-license .icon svg {
+  width: 27px;
+}
+@media only screen and (min-width: 1400px) {
+  .cl-doc-row .single-col {
+    width: calc(33.3333333333% - 20px);
+  }
+  .cl-doc-row .single-col.manage-license {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1620px) {
+  .wpfnl-license-wrapper .wpfnl-license-filed .field-header .product-title,
+  .wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .product-title {
+    width: 280px;
+  }
+  .wpfnl-license-wrapper .wpfnl-license-filed .field-header .input-field,
+  .wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .input-field {
+    padding: 0 20px;
+  }
+  .wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .product-title {
+    width: 260px;
+  }
+  .wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .btn-area {
+    width: 150px;
+  }
+  .wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .input-field {
+    width: calc(100% - 410px);
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .wpfnl-license-wrapper .wpfnl-license-filed {
+    width: 100%;
+    margin-right: 0;
+  }
+  .wpfnl-license-wrapper .promo-text-area {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    display: none;
+  }
+  .wpfnl-license-wrapper .promo-text-area .single-area {
+    width: calc(33.3333333333% - 20px);
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+  .wpfnl-license-wrapper .promo-text-area .single-area:first-child {
+    margin-left: 0;
+  }
+  .cl-doc-row .single-col {
+    padding: 25px 20px 20px;
+  }
+  .cl-doc-row .single-col .icon {
+    top: 17px;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .wpfnl-license-wrapper {
+    gap: 20px;
+  }
+  .wpfnl-license-wrapper .promo-text-area .manage-license-area:before {
+    left: -47px;
+  }
+  .wpfnl-license-wrapper .promo-text-area .manage-license-area {
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .wpfnl-license-wrapper .promo-text-area .single-area {
+    width: calc(33.3333333333% - 14px);
+    margin-left: 20px;
+    padding: 20px;
+  }
+  .wpfnl-license-wrapper .promo-text-area .single-area .icon {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    margin-bottom: 12px;
+  }
+  .cl-doc-row {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .cl-doc-row .single-col {
+    width: calc(50% - 10px);
+  }
+  .cl-doc-row .single-col .icon {
+    top: 18px;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .wpfnl-license-wrapper .wpfnl-license-filed .field-header {
+    display: none;
+  }
+  .wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .product-title {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .wpfnl-license-wrapper .wpfnl-license-filed .input-field-area .input-field {
+    width: calc(100% - 180px);
+    max-width: initial;
+    padding: 0;
+  }
+  .wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .product-title {
+    width: 100%;
+  }
+  .wpfnl-license-wrapper .wpfnl-license-filed .addons-license .input-field-area .input-field {
+    width: calc(100% - 160px);
+  }
+  .cl-doc-row .single-col:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=wpfnl-pro-admin.css.map */

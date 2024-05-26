@@ -211,6 +211,7 @@ function wp_register_script( $handle, $src, $deps = array(), $ver = false, $args
  *
  * @see WP_Scripts::localize()
  * @link https://core.trac.wordpress.org/ticket/11520
+ * @global WP_Scripts $wp_scripts The WP_Scripts object for printing scripts.
  *
  * @since 2.2.0
  *
@@ -223,7 +224,12 @@ function wp_register_script( $handle, $src, $deps = array(), $ver = false, $args
  * @return bool True if the script was successfully localized, false otherwise.
  */
 function wp_localize_script( $handle, $object_name, $l10n ) {
-	$wp_scripts = wp_scripts();
+	global $wp_scripts;
+
+	if ( ! ( $wp_scripts instanceof WP_Scripts ) ) {
+		_wp_scripts_maybe_doing_it_wrong( __FUNCTION__, $handle );
+		return false;
+	}
 
 	return $wp_scripts->localize( $handle, $object_name, $l10n );
 }

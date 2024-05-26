@@ -287,6 +287,13 @@ class Element_Column extends Element_Base {
 					'background' => [
 						'frontend_available' => true,
 					],
+					'image' => [
+						'background_lazyload' => [
+							'active' => true,
+							'keys' => [ 'background_image', 'url' ],
+							'selector' => '.elementor-element-populated',
+						],
+					],
 				],
 			]
 		);
@@ -360,6 +367,15 @@ class Element_Column extends Element_Base {
 			[
 				'name' => 'background_overlay',
 				'selector' => '{{WRAPPER}} > .elementor-element-populated >  .elementor-background-overlay',
+				'fields_options' => [
+					'image' => [
+						'background_lazyload' => [
+							'active' => true,
+							'keys' => [ '_background_overlay', 'url' ],
+							'selector' => '.elementor-background-overlay,',
+						],
+					],
+				],
 			]
 		);
 
@@ -929,11 +945,8 @@ class Element_Column extends Element_Base {
 	public function before_render() {
 		$settings = $this->get_settings_for_display();
 
-		$overlay_background = $settings['background_overlay_background'] ?? '';
-		$overlay_hover_background = $settings['background_overlay_hover_background'] ?? '';
-
-		$has_background_overlay = in_array( $overlay_background, [ 'classic', 'gradient' ], true ) ||
-								  in_array( $overlay_hover_background, [ 'classic', 'gradient' ], true );
+		$has_background_overlay = in_array( $settings['background_overlay_background'], [ 'classic', 'gradient' ], true ) ||
+								  in_array( $settings['background_overlay_hover_background'], [ 'classic', 'gradient' ], true );
 
 		$column_wrap_classes = [ 'elementor-widget-wrap' ];
 

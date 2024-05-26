@@ -605,12 +605,7 @@ class Widget_Image_Box extends Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 
-		$has_image = ! empty( $settings['image']['url'] );
 		$has_content = ! Utils::is_empty( $settings['title_text'] ) || ! Utils::is_empty( $settings['description_text'] );
-
-		if ( ! $has_image && ! $has_content ) {
-			return;
-		}
 
 		$html = '<div class="elementor-image-box-wrapper">';
 
@@ -618,7 +613,7 @@ class Widget_Image_Box extends Widget_Base {
 			$this->add_link_attributes( 'link', $settings['link'] );
 		}
 
-		if ( $has_image ) {
+		if ( ! empty( $settings['image']['url'] ) ) {
 
 			$image_html = wp_kses_post( Group_Control_Image_Size::get_attachment_image_html( $settings, 'thumbnail', 'image' ) );
 
@@ -673,16 +668,9 @@ class Widget_Image_Box extends Widget_Base {
 	protected function content_template() {
 		?>
 		<#
-		var hasImage = !! settings.image.url;
-		var hasContent = !! ( settings.title_text || settings.description_text );
-
-		if ( ! hasImage && ! hasContent ) {
-			return;
-		}
-
 		var html = '<div class="elementor-image-box-wrapper">';
 
-		if ( hasImage ) {
+		if ( settings.image.url ) {
 			var image = {
 				id: settings.image.id,
 				url: settings.image.url,
@@ -701,6 +689,8 @@ class Widget_Image_Box extends Widget_Base {
 
 			html += '<figure class="elementor-image-box-img">' + imageHtml + '</figure>';
 		}
+
+		var hasContent = !! ( settings.title_text || settings.description_text );
 
 		if ( hasContent ) {
 			html += '<div class="elementor-image-box-content">';

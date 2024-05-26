@@ -1,0 +1,64 @@
+.woostify-countdown-preorder-lablel {
+    font-weight: bold;
+}
+.woostify-countdown-preorder-wrap {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 40px 15px 30px 15px;
+    text-align: center;
+}
+.woostify-countdown-preorder {
+    display: flex;
+    justify-content: space-between;
+}
+.woostify-countdown-preorder .woostify-preorder-timer-item {
+    flex-basis: 25%;
+    position: relative;
+}
+.woostify-countdown-preorder .woostify-preorder-timer-item .woostify-preorder-timer:before {
+    content: ':';
+    position: absolute;
+    left: 0;
+}
+.woostify-countdown-preorder .woostify-preorder-timer-item:first-child .woostify-preorder-timer::before {
+    display: none;
+}
+.woostify-countdown-preorder-lablel {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 0;
+    transform: translateY(-50%);
+}
+.woostify-countdown-preorder-lablel .woostify-countdown-preorder-lablel-text {
+    padding: 0 15px;
+    font-weight: 700;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 1.1em;
+    background-color: #f3f3f3;
+}
+.woostify-countdown-preorder .woostify-preorder-timer {
+    font-size: 36px;
+    position: relative;
+    line-height: 30px;
+}
+.woostify-countdown-preorder .woostify-preorder-timer-label {
+    font-size: 12px;
+}
+.woostify-preorder-maximum-order {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.woostify-pre-order-product {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.woostify-pre-order-product .preorder-closed {
+    margin-top: -10px;
+}
+#woostify-quick-view-panel .woostify-countdown-preorder .woostify-preorder-timer {
+    font-size: 1.5em;
+}

@@ -10,7 +10,6 @@ use Elementor\Plugin;
 use Elementor\TemplateLibrary\Source_Local;
 use Elementor\User;
 use Elementor\Utils;
-use Elementor\Core\Utils\Promotions\Filtered_Promotions_Manager;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -104,11 +103,6 @@ class App extends BaseApp {
 			'admin_url' => admin_url(),
 			'login_url' => wp_login_url(),
 			'base_url' => $this->get_base_url(),
-			'promotion' => Filtered_Promotions_Manager::get_filtered_promotion_data(
-				[ 'upgrade_url' => 'https://go.elementor.com/go-pro-theme-builder/' ],
-				'elementor/site-editor/promotion',
-				'upgrade_url'
-			),
 		];
 	}
 

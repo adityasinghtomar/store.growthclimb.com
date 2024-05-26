@@ -1,0 +1,178 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SupportCandy - WooCommerce\n"
+"POT-Creation-Date: 2023-07-07 10:22+0530\n"
+"PO-Revision-Date: 2023-07-07 10:22+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpsc-woocommerce.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: class-wpsc-woo-installation.php:111 includes/class-wpsc-woo-settings.php:36
+msgid "Support Tickets"
+msgstr "Ügyfélszolgálat Jegyek"
+
+#: class-wpsc-woo-installation.php:112 class-wpsc-woo-installation.php:113
+#: class-wpsc-woo-installation.php:114 class-wpsc-woo-installation.php:151
+#: class-wpsc-woo-installation.php:158 includes/class-wpsc-woo-settings.php:37
+#: includes/class-wpsc-woo-settings.php:38
+#: includes/class-wpsc-woo-settings.php:39
+msgid "Help"
+msgstr "Segítség"
+
+#: class-wpsc-woo-installation.php:236
+msgid "Woo Subscriptions"
+msgstr "Woo Feliratkozások"
+
+#: includes/class-wpsc-woo-admin.php:61
+msgid "Create Ticket"
+msgstr "Jegy Létrehozása"
+
+#: includes/class-wpsc-woo-license.php:109
+#: includes/class-wpsc-woo-license.php:159
+#: includes/class-wpsc-woo-settings.php:100
+#: includes/class-wpsc-woo-settings.php:231
+#: includes/class-wpsc-woo-settings.php:271
+#: includes/widget/class-wpsc-itw-woo-subscription.php:120
+#: includes/widget/class-wpsc-itw-woo-subscription.php:207
+#: includes/widget/class-wpsc-itw-woo.php:125
+#: includes/widget/class-wpsc-itw-woo.php:212
+msgid "Unauthorized access!"
+msgstr "Jogosulatlan hozzáférés!"
+
+#: includes/class-wpsc-woo-license.php:114
+#: includes/class-wpsc-woo-license.php:164
+#: includes/report/class-wpsc-rp-woo-product.php:69
+#: includes/report/class-wpsc-rp-woo-product.php:83
+#: includes/report/class-wpsc-rp-woo-product.php:136
+#: includes/report/class-wpsc-rp-woo-product.php:166
+#: includes/widget/class-wpsc-itw-woo-subscription.php:212
+#: includes/widget/class-wpsc-itw-woo.php:217
+msgid "Bad request!"
+msgstr "Rossz kérés!"
+
+#: includes/class-wpsc-woo-settings.php:113
+msgid "Dashboard support tab"
+msgstr "Irányítópult támogatás lapja"
+
+#: includes/class-wpsc-woo-settings.php:124
+msgid "Dashboard support tab label"
+msgstr "Irányítópult támogatás lapjának címkéje"
+
+#: includes/class-wpsc-woo-settings.php:132
+msgid "Order help button"
+msgstr "Rendelési segítség gomb"
+
+#: includes/class-wpsc-woo-settings.php:143
+msgid "Order help button label"
+msgstr "Rendelési segítség gomb címkéje"
+
+#: includes/class-wpsc-woo-settings.php:152
+msgid "Product help button"
+msgstr "Termék súgó gomb"
+
+#: includes/class-wpsc-woo-settings.php:163
+msgid "Product help button label"
+msgstr "Termék súgó gomb címkéje"
+
+#: includes/class-wpsc-woo-settings.php:172
+#, fuzzy
+#| msgid "Product help button"
+msgid "Product help tab"
+msgstr "Termék súgó gomb"
+
+#: includes/class-wpsc-woo-settings.php:183
+#, fuzzy
+#| msgid "Product help button label"
+msgid "Product help tab label"
+msgstr "Termék súgó gomb címkéje"
+
+#: includes/class-wpsc-woo-settings.php:192
+msgid "Use woo dashboad as ticket URL"
+msgstr "Használja a woo irányítópultot jegy URL-ként"
+
+#: includes/custom-field-types/class-wpsc-cf-woo-order.php:214
+msgid "WOO Order"
+msgstr "WOO Megrendelés"
+
+#. translators: %s: payment id
+#. translators: %s: order id
+#: includes/custom-field-types/class-wpsc-cf-woo-order.php:990
+#: includes/widget/class-wpsc-itw-woo-subscription.php:261
+#: includes/widget/class-wpsc-itw-woo.php:266
+#, php-format
+msgid "Order %s"
+msgstr "Megrendelés %s"
+
+#: includes/custom-field-types/class-wpsc-cf-woo-order.php:1030
+#: includes/widget/class-wpsc-itw-woo-subscription.php:430
+#: includes/widget/class-wpsc-itw-woo-subscription.php:514
+#: includes/widget/class-wpsc-itw-woo.php:303
+#: includes/widget/class-wpsc-itw-woo.php:388
+msgid "View Order"
+msgstr "Megrendelés megtekintése"
+
+#: includes/custom-field-types/class-wpsc-cf-woo-product.php:210
+msgid "WOO Product"
+msgstr "WOO Termék"
+
+#: includes/report/class-wpsc-rp-woo-product.php:145
+msgid "Unauthorized"
+msgstr "Jogosulatlan"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:69
+#: includes/widget/class-wpsc-itw-woo.php:73
+msgid "Total Spent:"
+msgstr "Összesen eltöltött:"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:86
+#: includes/widget/class-wpsc-itw-woo.php:91
+msgid "Recent Orders:"
+msgstr "Legutóbbi megrendelések:"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:101
+#: includes/widget/class-wpsc-itw-woo.php:106
+msgid "View More"
+msgstr "Több megjelenítése"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:284
+msgid "Order"
+msgstr "Megrendelés"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:293
+msgid "Order Status"
+msgstr "Megrendelés Állapota"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:300
+msgid "Payment Key:"
+msgstr "Fizetési Kulcs:"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:379
+msgid "Products"
+msgstr "Termékek"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:472
+#: includes/widget/class-wpsc-itw-woo.php:349
+msgid "WooCommerce order payments"
+msgstr "WooCommerce megrendelés kifizetések"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:585
+msgid "Subscriptions details"
+msgstr "Előfizetések részletei"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:603
+msgid "Subscriptions Update"
+msgstr "Előfizetések Frissítése"

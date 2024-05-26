@@ -1,0 +1,23 @@
+.wpsc-modal .woo-table {
+	width: 100%;
+}
+.wpsc-modal .woo-table th {
+	text-align: left;
+}
+.wpsc-modal .woo-table th,
+.wpsc-modal .woo-table td {
+	padding: 5px;
+}
+
+/* required */
+.required-indicator {
+	color: #ff0000;
+	margin-left: 5px;
+}
+
+.wpsc-woo {
+	width: 100% !important;
+}
+.wpsc-woo table th td {
+	border: none !important;
+}

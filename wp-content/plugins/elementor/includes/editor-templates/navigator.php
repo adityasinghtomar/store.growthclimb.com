@@ -59,10 +59,8 @@ if ( ! $has_pro ) {
 	<div id="elementor-navigator__footer">
 		<?php if ( ! $has_pro && ! empty( $promotion_data ) ) : ?>
 			<div id="elementor-navigator__footer__promotion">
-				<div class="elementor-navigator__promotion-text">
-					<?php echo esc_attr( $promotion_data['text'] ); ?>.
-					<a href="<?php echo esc_url( $promotion_data['url'] ); ?>" target="_blank" class="e-link-promotion"><?php echo esc_attr( $promotion_data['url_label'] ); ?></a>
-				</div>
+				<?php echo esc_attr( $promotion_data['text'] ); ?>.
+				<a href="<?php echo esc_url( $promotion_data['url'] ); ?>" target="_blank" class="e-link-promotion"><?php echo esc_attr( $promotion_data['url_label'] ); ?></a>
 			</div>
 		<?php endif; ?>
 

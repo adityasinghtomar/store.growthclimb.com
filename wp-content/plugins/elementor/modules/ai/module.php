@@ -297,9 +297,8 @@ class Module extends BaseModule {
 		if ( ! $app->is_connected() ) {
 			throw new \Exception( 'not_connected' );
 		}
-		$request_ids = $this->get_request_ids( $data['payload'] );
 
-		$result = $app->get_image_prompt_enhanced( $data['prompt'], [], $request_ids );
+		$result = $app->get_image_prompt_enhanced( $data['prompt'] );
 		$this->throw_on_error( $result );
 
 		return [
@@ -507,6 +506,10 @@ class Module extends BaseModule {
 		$this->verify_permissions( $data['editor_post_id'] );
 
 		$app = $this->get_ai_app();
+
+		if ( empty( $data['payload']['prompt'] ) ) {
+			throw new \Exception( 'Missing prompt' );
+		}
 
 		if ( empty( $data['payload']['image'] ) || empty( $data['payload']['image']['id'] ) ) {
 			throw new \Exception( 'Missing Image' );

@@ -165,8 +165,7 @@ class WP_REST_Templates_Controller extends WP_REST_Controller {
 			array_shift( $hierarchy );
 		} while ( ! empty( $hierarchy ) && empty( $fallback_template->content ) );
 
-		// To maintain original behavior, return an empty object rather than a 404 error when no template is found.
-		$response = $fallback_template ? $this->prepare_item_for_response( $fallback_template, $request ) : new stdClass();
+		$response = $this->prepare_item_for_response( $fallback_template, $request );
 
 		return rest_ensure_response( $response );
 	}
@@ -533,7 +532,7 @@ class WP_REST_Templates_Controller extends WP_REST_Controller {
 	 * @since 5.8.0
 	 *
 	 * @param WP_REST_Request $request Request object.
-	 * @return stdClass|WP_Error Changes to pass to wp_update_post.
+	 * @return stdClass Changes to pass to wp_update_post.
 	 */
 	protected function prepare_item_for_database( $request ) {
 		$template = $request['id'] ? get_block_template( $request['id'], $this->post_type ) : null;

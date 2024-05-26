@@ -32883,8 +32883,7 @@ function layout_addAttribute(settings) {
 }
 function BlockWithLayoutStyles({
   block: BlockListBlock,
-  props,
-  layoutClasses
+  props
 }) {
   const {
     name,
@@ -32901,6 +32900,7 @@ function BlockWithLayoutStyles({
     ...layout,
     type: 'constrained'
   } : layout || defaultBlockLayout || {};
+  const layoutClasses = useLayoutClasses(attributes, name);
   const {
     kebabCase
   } = unlock(external_wp_components_namespaceObject.privateApis);
@@ -32942,12 +32942,7 @@ function BlockWithLayoutStyles({
  * @return {Function} Wrapped component.
  */
 const withLayoutStyles = (0,external_wp_compose_namespaceObject.createHigherOrderComponent)(BlockListBlock => props => {
-  const {
-    name,
-    attributes
-  } = props;
   const blockSupportsLayout = hasLayoutBlockSupport(props.name);
-  const layoutClasses = useLayoutClasses(attributes, name);
   const shouldRenderLayoutStyles = (0,external_wp_data_namespaceObject.useSelect)(select => {
     // The callback returns early to avoid block editor subscription.
     if (!blockSupportsLayout) {
@@ -32957,14 +32952,12 @@ const withLayoutStyles = (0,external_wp_compose_namespaceObject.createHigherOrde
   }, [blockSupportsLayout]);
   if (!shouldRenderLayoutStyles) {
     return (0,external_React_.createElement)(BlockListBlock, {
-      ...props,
-      __unstableLayoutClassNames: blockSupportsLayout ? layoutClasses : undefined
+      ...props
     });
   }
   return (0,external_React_.createElement)(BlockWithLayoutStyles, {
     block: BlockListBlock,
-    props: props,
-    layoutClasses: layoutClasses
+    props: props
   });
 }, 'withLayoutStyles');
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/layout/addAttribute', layout_addAttribute);
@@ -41969,14 +41962,12 @@ function Pagination({
     variant: "tertiary",
     onClick: () => changePage(1),
     disabled: currentPage === 1,
-    "aria-label": (0,external_wp_i18n_namespaceObject.__)('First page'),
-    __experimentalIsFocusable: true
+    "aria-label": (0,external_wp_i18n_namespaceObject.__)('First page')
   }, (0,external_React_.createElement)("span", null, "\xAB")), (0,external_React_.createElement)(external_wp_components_namespaceObject.Button, {
     variant: "tertiary",
     onClick: () => changePage(currentPage - 1),
     disabled: currentPage === 1,
-    "aria-label": (0,external_wp_i18n_namespaceObject.__)('Previous page'),
-    __experimentalIsFocusable: true
+    "aria-label": (0,external_wp_i18n_namespaceObject.__)('Previous page')
   }, (0,external_React_.createElement)("span", null, "\u2039"))), (0,external_React_.createElement)(external_wp_components_namespaceObject.__experimentalText, {
     variant: "muted"
   }, (0,external_wp_i18n_namespaceObject.sprintf)(
@@ -41989,15 +41980,13 @@ function Pagination({
     variant: "tertiary",
     onClick: () => changePage(currentPage + 1),
     disabled: currentPage === numPages,
-    "aria-label": (0,external_wp_i18n_namespaceObject.__)('Next page'),
-    __experimentalIsFocusable: true
+    "aria-label": (0,external_wp_i18n_namespaceObject.__)('Next page')
   }, (0,external_React_.createElement)("span", null, "\u203A")), (0,external_React_.createElement)(external_wp_components_namespaceObject.Button, {
     variant: "tertiary",
     onClick: () => changePage(numPages),
     disabled: currentPage === numPages,
     "aria-label": (0,external_wp_i18n_namespaceObject.__)('Last page'),
-    size: "default",
-    __experimentalIsFocusable: true
+    size: "default"
   }, (0,external_React_.createElement)("span", null, "\xBB")))));
 }
 
@@ -54059,14 +54048,9 @@ function useListViewDropZone({
   const ref = (0,external_wp_compose_namespaceObject.__experimentalUseDropZone)({
     dropZoneElement,
     onDrop(event) {
-      throttled.cancel();
       if (target) {
         onBlockDrop(event);
       }
-      // Use `undefined` value to indicate that the drag has concluded.
-      // This allows styling rules that are active only when a user is
-      // dragging to be removed.
-      setTarget(undefined);
     },
     onDragLeave() {
       throttled.cancel();

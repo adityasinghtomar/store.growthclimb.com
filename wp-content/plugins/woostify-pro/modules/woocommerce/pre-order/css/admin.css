@@ -1,0 +1,16 @@
+table.wp-list-table mark.pre-order {
+    background:transparent none;
+    color:#33ccff;
+    font-weight:700;
+    line-height:1;
+}
+.hidden {
+    display: none;
+}
+.options_group_preorder.form-row input[type=text],
+.options_group_preorder.form-row input[type=number] {
+    padding: 0 8px;
+}
+#variable_product_options .form-row.variable_stock_status select option[value="onpreorder"] {
+    display: none;
+}

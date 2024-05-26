@@ -1,0 +1,189 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpsc-woo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-07 10:21+0530\n"
+"PO-Revision-Date: 2023-07-07 10:24+0530\n"
+"Last-Translator: Alen Lin\n"
+"Language-Team: Chinese (Taiwan)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 131530\n"
+"X-Loco-Api-Version: 1.0.26 20220711-1\n"
+
+#: class-wpsc-woo-installation.php:111 includes/class-wpsc-woo-settings.php:36
+msgid "Support Tickets"
+msgstr "支援案件"
+
+#: class-wpsc-woo-installation.php:112 class-wpsc-woo-installation.php:113
+#: class-wpsc-woo-installation.php:114 class-wpsc-woo-installation.php:151
+#: class-wpsc-woo-installation.php:158 includes/class-wpsc-woo-settings.php:37
+#: includes/class-wpsc-woo-settings.php:38
+#: includes/class-wpsc-woo-settings.php:39
+msgid "Help"
+msgstr "尋求協助"
+
+#: class-wpsc-woo-installation.php:236
+msgid "Woo Subscriptions"
+msgstr "Woo訂閱 (Woo Subscriptions)"
+
+#: includes/class-wpsc-woo-admin.php:61
+msgid "Create Ticket"
+msgstr "建立案件"
+
+#: includes/class-wpsc-woo-license.php:109
+#: includes/class-wpsc-woo-license.php:159
+#: includes/class-wpsc-woo-settings.php:100
+#: includes/class-wpsc-woo-settings.php:231
+#: includes/class-wpsc-woo-settings.php:271
+#: includes/widget/class-wpsc-itw-woo-subscription.php:120
+#: includes/widget/class-wpsc-itw-woo-subscription.php:207
+#: includes/widget/class-wpsc-itw-woo.php:125
+#: includes/widget/class-wpsc-itw-woo.php:212
+msgid "Unauthorized access!"
+msgstr ""
+
+#: includes/class-wpsc-woo-license.php:114
+#: includes/class-wpsc-woo-license.php:164
+#: includes/report/class-wpsc-rp-woo-product.php:69
+#: includes/report/class-wpsc-rp-woo-product.php:83
+#: includes/report/class-wpsc-rp-woo-product.php:136
+#: includes/report/class-wpsc-rp-woo-product.php:166
+#: includes/widget/class-wpsc-itw-woo-subscription.php:212
+#: includes/widget/class-wpsc-itw-woo.php:217
+msgid "Bad request!"
+msgstr ""
+
+#: includes/class-wpsc-woo-settings.php:113
+msgid "Dashboard support tab"
+msgstr "儀表板支援分頁"
+
+#: includes/class-wpsc-woo-settings.php:124
+msgid "Dashboard support tab label"
+msgstr "儀表板支援分頁標籤"
+
+#: includes/class-wpsc-woo-settings.php:132
+msgid "Order help button"
+msgstr "訂購幫助按鈕"
+
+#: includes/class-wpsc-woo-settings.php:143
+msgid "Order help button label"
+msgstr "訂購幫助按鈕標籤"
+
+#: includes/class-wpsc-woo-settings.php:152
+#, fuzzy
+#| msgid "Order help button"
+msgid "Product help button"
+msgstr "訂購幫助按鈕"
+
+#: includes/class-wpsc-woo-settings.php:163
+#, fuzzy
+#| msgid "Order help button label"
+msgid "Product help button label"
+msgstr "訂購幫助按鈕標籤"
+
+#: includes/class-wpsc-woo-settings.php:172
+#, fuzzy
+#| msgid "Order help button"
+msgid "Product help tab"
+msgstr "訂購幫助按鈕"
+
+#: includes/class-wpsc-woo-settings.php:183
+#, fuzzy
+#| msgid "Order help button label"
+msgid "Product help tab label"
+msgstr "訂購幫助按鈕標籤"
+
+#: includes/class-wpsc-woo-settings.php:192
+msgid "Use woo dashboad as ticket URL"
+msgstr "使用woo儀表板作為案件網址"
+
+#: includes/custom-field-types/class-wpsc-cf-woo-order.php:214
+msgid "WOO Order"
+msgstr "WOO 訂單"
+
+#. translators: %s: payment id
+#. translators: %s: order id
+#: includes/custom-field-types/class-wpsc-cf-woo-order.php:990
+#: includes/widget/class-wpsc-itw-woo-subscription.php:261
+#: includes/widget/class-wpsc-itw-woo.php:266
+#, php-format
+msgid "Order %s"
+msgstr "訂單 %s"
+
+#: includes/custom-field-types/class-wpsc-cf-woo-order.php:1030
+#: includes/widget/class-wpsc-itw-woo-subscription.php:430
+#: includes/widget/class-wpsc-itw-woo-subscription.php:514
+#: includes/widget/class-wpsc-itw-woo.php:303
+#: includes/widget/class-wpsc-itw-woo.php:388
+msgid "View Order"
+msgstr "查看訂單"
+
+#: includes/custom-field-types/class-wpsc-cf-woo-product.php:210
+msgid "WOO Product"
+msgstr "Woo產品"
+
+#: includes/report/class-wpsc-rp-woo-product.php:145
+msgid "Unauthorized"
+msgstr ""
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:69
+#: includes/widget/class-wpsc-itw-woo.php:73
+msgid "Total Spent:"
+msgstr "總支出："
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:86
+#: includes/widget/class-wpsc-itw-woo.php:91
+msgid "Recent Orders:"
+msgstr "最近的訂單:"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:101
+#: includes/widget/class-wpsc-itw-woo.php:106
+msgid "View More"
+msgstr "查看更多"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:284
+msgid "Order"
+msgstr "訂單"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:293
+msgid "Order Status"
+msgstr "訂單狀態"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:300
+msgid "Payment Key:"
+msgstr "付款密鑰："
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:379
+msgid "Products"
+msgstr "產品"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:472
+#: includes/widget/class-wpsc-itw-woo.php:349
+msgid "WooCommerce order payments"
+msgstr "WooCommerce訂單付款"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:585
+msgid "Subscriptions details"
+msgstr "訂閱詳細信息"
+
+#: includes/widget/class-wpsc-itw-woo-subscription.php:603
+msgid "Subscriptions Update"
+msgstr "訂閱更新"
+
+#~ msgid "SupportCandy - WooCommerce"
+#~ msgstr "SupportCandy - WooCommerce"
+
+#~ msgid "https://supportcandy.net/"
+#~ msgstr "https://supportcandy.net/"
+
+#~ msgid "WooCommerce integration for SupportCandy!"
+#~ msgstr "SupportCandy WooCommerce 整合外掛套件!"
+
+#~ msgid "SupportCandy"
+#~ msgstr "客服系統"

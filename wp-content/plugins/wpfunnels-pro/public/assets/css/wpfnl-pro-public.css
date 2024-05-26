@@ -1,0 +1,277 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.offer-btn-d-inline-block{
+    display: inline-block;
+}
+
+.wpfunnels-offer-loader .wpfnl-loader {
+    border: 3px solid #d6d6d6;
+    border-top: 3px solid #6E42D3;
+    width: 50px;
+    height: 50px;
+}
+
+.wpfunnels-offer-loader {
+    background: #6e42d326;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.wpfunnels-offer-loader-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 210px;
+    width: 360px;
+    background: #fff;
+    box-shadow: 0px 10px 60px rgba(186, 159, 254, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+.wpfunnels-offer-loader .wpfnl-loader {
+    display: block;
+}
+.wpfunnels-offer-loader .loader-ittle {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+.wpfunnels-offer-loader p {
+    font-size: 16px;
+}
+
+
+
+.dot-wrapper span {
+    color: #000;
+    font-size: 16px;
+    margin-left: -1px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.dot-wrapper span.dot-one {
+    animation-name: flashOne;
+}
+.dot-wrapper span.dot-two {
+    animation-name: flashTwo;
+}
+.dot-wrapper span.dot-three {
+    animation-name: flashThree;
+}
+  
+@keyframes flashOne {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes flashTwo {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes flashThree {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.checkout-radio .radio {
+  display: inline!important;
+  margin-left: 3px;
+  margin-right: 10px;
+}
+
+
+
+/* --------- unsupported payment modal-------------- */
+.wpfnl-offer-payment-form {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  padding: 30px 20px;
+  background: #3333336b;
+}
+.wpfnl-offer-payment-form .wpfnl-offer-payment-form-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.wpfnl-offer-payment-form .wpfnl-offer-payment-form-wrapper {
+  max-width: 890px;
+  width: 100%;
+  max-height: calc(100% - 60px);
+  min-height: 490px;
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+
+}
+
+.wpfnl-offer-payment-form .wpfnl-offer-payment-form-wrapper .wpfnl-offer-payment-title {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 18px 30px;
+  border-bottom: 1px solid #E5E8F3;
+  border-radius: 20px 20px 0 0;
+}
+
+.wpfnl-offer-payment-form .wpfnl-offer-payment-form-wrapper .modal-overflow {
+  width: 100%;
+  height: calc(100% - 66px);
+  overflow: auto;
+  border-radius: 0 0 19px 19px;
+}
+
+.wpfnl-offer-payment-form .close-modal {
+  border: none;
+  background: #fff!important;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  padding: 0;
+  line-height: 1;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.wpfnl-offer-payment-form .woocommerce-checkout #payment {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+.wpfnl-offer-payment-form .modal-loader {
+  padding: 30px;
+  text-align: center;
+  height: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.wpfnl-offer-payment-form .modal-loader p {
+  font-size: 14px;
+}
+
+.wpfnl-offer-payment-form .modal-loader h4 {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wpfnl-offer-payment-form .wpfnl-loader {
+  display: block;
+  margin:0;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+
+/* ----place oder button's checkbox styel------- */
+.wpfnl-offer-payment-form .place-order > label.woocommerce-form__label-for-checkbox {
+  margin-bottom: 15px!important;
+  display: block!important;
+}
+.wpfnl-offer-payment-form .place-order > label.woocommerce-form__label-for-checkbox input[type="checkbox"] {
+  display: none;
+}
+.wpfnl-offer-payment-form .place-order > label.woocommerce-form__label-for-checkbox > span {
+  font-size: 16px;
+  line-height : 1.2;
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+  width: 100%;
+  display: block !important;
+  min-height: 14px;
+  rgba(54, 59, 78, 0.8)
+}
+.wpfnl-offer-payment-form .place-order > label.woocommerce-form__label-for-checkbox > span:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #72737e;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wpfnl-offer-payment-form .place-order > label.woocommerce-form__label-for-checkbox > span:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 7px;
+  height: 11px;
+  background: transparent;
+  border-radius: 2px;
+  opacity: 0;
+  transform: rotate(45deg) skewX(15deg);
+  transition: all 0.3s ease;
+  border: 3px solid #fff;
+  border-left: none;
+  border-top: none;
+}
+
+.wpfnl-offer-payment-form .place-order > label.woocommerce-form__label-for-checkbox input[type="checkbox"]:checked + span:before {
+  border-color: #6E42D3;
+  background-color: #6E42D3;
+}
+.wpfnl-offer-payment-form .place-order > label.woocommerce-form__label-for-checkbox input[type="checkbox"]:checked + span:after {
+  opacity: 1;
+}
