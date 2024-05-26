@@ -1,0 +1,171 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: "woodmart-font";
+	src: url("//store.growthclimb.com/wp-content/themes/woodmart/fonts/woodmart-font-2-400.woff2?v=7.5.1") format("woff2");
+}
+
+:root {
+	--wd-cat-brd-radius: 50%;
+	--wd-text-font: "Work Sans", Arial, Helvetica, sans-serif;
+	--wd-text-font-weight: 400;
+	--wd-text-color: #777777;
+	--wd-text-font-size: 15px;
+	--wd-title-font: "Urbanist", Arial, Helvetica, sans-serif;
+	--wd-title-font-weight: 700;
+	--wd-title-color: #242424;
+	--wd-entities-title-font: "Urbanist", Arial, Helvetica, sans-serif;
+	--wd-entities-title-font-weight: 700;
+	--wd-entities-title-color: #333333;
+	--wd-entities-title-color-hover: rgb(51 51 51 / 65%);
+	--wd-alternative-font: "Lato", Arial, Helvetica, sans-serif;
+	--wd-widget-title-font: "Urbanist", Arial, Helvetica, sans-serif;
+	--wd-widget-title-font-weight: 700;
+	--wd-widget-title-transform: capitalize;
+	--wd-widget-title-color: #333;
+	--wd-widget-title-font-size: 16px;
+	--wd-header-el-font: "Urbanist", Arial, Helvetica, sans-serif;
+	--wd-header-el-font-weight: 600;
+	--wd-header-el-transform: capitalize;
+	--wd-header-el-font-size: 14px;
+	--wd-brd-radius: 10px;
+	--wd-primary-color: rgb(245,154,87);
+	--wd-alternative-color: rgb(224,234,240);
+	--wd-link-color: #333333;
+	--wd-link-color-hover: #242424;
+	--btn-default-transform: none;
+	--btn-default-bgcolor: #f7f7f7;
+	--btn-default-bgcolor-hover: #efefef;
+	--btn-accented-transform: none;
+	--btn-accented-bgcolor: rgb(245,154,87);
+	--btn-accented-bgcolor-hover: rgb(223,140,79);
+	--btn-transform: none;
+	--wd-form-brd-width: 1px;
+	--notices-success-bg: #459647;
+	--notices-success-color: #fff;
+	--notices-warning-bg: #E0B252;
+	--notices-warning-color: #fff;
+}
+:is(.shop-content-area.wd-builder-off,.wd-wishlist-content,.related-and-upsells,.cart-collaterals,.wd-shop-product,.wd-fbt) .wd-products-with-bg, :is(.shop-content-area.wd-builder-off,.wd-wishlist-content,.related-and-upsells,.cart-collaterals,.wd-shop-product,.wd-fbt) .wd-products-with-bg .wd-product {
+	--wd-prod-bg:rgb(255,255,255);
+	--wd-bordered-bg:rgb(255,255,255);
+}
+.woodmart-woocommerce-layered-nav .wd-scroll-content {
+	max-height: 223px;
+}
+.wd-popup.wd-age-verify {
+	--wd-popup-width: 500px;
+}
+.wd-popup.wd-promo-popup {
+	background-color: rgb(245,154,87);
+	background-image: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left center;
+	--wd-popup-width: 480px;
+	--wd-popup-padding: 0px;
+}
+.page-title-default {
+	background-color: rgb(174,182,161);
+	background-image: url(https://store.growthclimb.com/wp-content/uploads/2023/04/wd-furniture-pt-def.jpg);
+	background-size: cover;
+	background-position: center top;
+}
+.footer-container {
+	background-color: rgb(15,15,15);
+	background-image: none;
+}
+html .wd-nav-mobile > li > a {
+	text-transform: capitalize;
+}
+.whb-top-bar .wd-nav.wd-nav-secondary > li > a {
+	font-family: "Work Sans", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+}
+html .post.wd-post .post-title {
+	font-size: 18px;
+}
+.page .main-page-wrapper {
+	background-image: url(https://store.growthclimb.com/wp-content/uploads/2023/04/wd-furniture-background.jpg);
+	background-repeat: repeat;
+}
+.woodmart-archive-shop:not(.single-product) .main-page-wrapper {
+	background-image: url(https://store.growthclimb.com/wp-content/uploads/2023/04/wd-furniture-background.jpg);
+	background-repeat: repeat;
+}
+.single-product .main-page-wrapper {
+	background-image: url(https://store.growthclimb.com/wp-content/uploads/2023/04/wd-furniture-background.jpg);
+	background-repeat: repeat;
+}
+.woodmart-archive-blog .main-page-wrapper {
+	background-image: url(https://store.growthclimb.com/wp-content/uploads/2023/04/wd-furniture-background.jpg);
+	background-repeat: repeat;
+}
+.single-post .main-page-wrapper {
+	background-image: url(https://store.growthclimb.com/wp-content/uploads/2023/04/wd-furniture-background.jpg);
+	background-repeat: repeat;
+}
+html .wd-buy-now-btn {
+	color: rgb(255,255,255);
+	background: rgba(16,16,16,0.9);
+}
+html .wd-buy-now-btn:hover {
+	color: rgb(255,255,255);
+	background: rgb(51,51,51);
+}
+body, [class*=color-scheme-light], [class*=color-scheme-dark], .wd-search-form[class*="wd-header-search-form"] form.searchform, .wd-el-search .searchform {
+	--wd-form-color: rgb(119,119,119);
+	--wd-form-placeholder-color: rgb(119,119,119)7;
+	--wd-form-bg: rgb(255,255,255);
+}
+.wd-popup.popup-quick-view {
+	--wd-popup-width: 920px;
+}
+.woocommerce-product-gallery {
+	--wd-gallery-gap: 20px;
+}
+
+@media (max-width: 1024px) {
+	.woocommerce-product-gallery {
+		--wd-gallery-gap: 20px;
+	}
+
+}
+
+@media (max-width: 768.98px) {
+	.woocommerce-product-gallery {
+		--wd-gallery-gap: 10px;
+	}
+
+}
+:root{
+--wd-container-w: 1400px;
+--wd-form-brd-radius: 35px;
+--btn-default-color: #333;
+--btn-default-color-hover: #333;
+--btn-accented-color: #fff;
+--btn-accented-color-hover: #fff;
+--btn-default-brd-radius: 35px;
+--btn-default-box-shadow: none;
+--btn-default-box-shadow-hover: none;
+--btn-accented-brd-radius: 35px;
+--btn-accented-box-shadow: none;
+--btn-accented-box-shadow-hover: none;
+}
+
+@media (min-width: 1417px) {
+.platform-Windows .wd-section-stretch > .elementor-container {
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+@media (min-width: 1400px) {
+html:not(.platform-Windows) .wd-section-stretch > .elementor-container {
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+

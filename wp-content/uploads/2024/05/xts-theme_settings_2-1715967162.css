@@ -1,0 +1,23 @@
+.page .main-page-wrapper {
+	background-color: rgb(255,255,255);
+	background-image: none;
+}
+:root{
+--wd-container-w: 1025px;
+}
+
+@media (min-width: 1042px) {
+.platform-Windows .wd-section-stretch > .elementor-container {
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+@media (min-width: 1025px) {
+html:not(.platform-Windows) .wd-section-stretch > .elementor-container {
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+
